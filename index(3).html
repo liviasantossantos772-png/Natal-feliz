@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Especial de Natal | Árvores de Natal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">🎄 Um Natal mais especial começa com a decoração perfeita!</div>
+<header>
+  <nav><strong>✦ Especial de Natal</strong><div><a href="#arvores">Árvores</a><a href="#pedido">Fazer pedido</a></div></nav>
+  <div class="hero">
+    <div><small>É TEMPO DE CELEBRAR</small><h1>Seu Natal merece brilhar.</h1><p>Escolha o tamanho da sua árvore e consulte disponibilidade, preço e entrega pelo WhatsApp.</p><a class="btn" href="#arvores">Ver árvores ↓</a></div>
+    <img src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=1000&q=85" alt="Árvore de Natal decorada">
+  </div>
+</header>
+<main>
+<section class="panel" id="arvores">
+<h2>Escolha sua árvore 🎄</h2><p class="muted">Fotos ilustrativas. Consulte modelos, valores e disponibilidade pelo WhatsApp.</p>
+<div class="products">
+<article><img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=800&q=80" alt="Decoração natalina"><h3>60 cm</h3><p>Pequena — ideal para mesas.</p><b>Consulte o preço</b><button class="choose" data-size="60 cm">Escolher</button></article>
+<article><img src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=800&q=80" alt="Árvore de Natal"><h3>90 cm</h3><p>Compacta — para cantinhos especiais.</p><b>Consulte o preço</b><button class="choose" data-size="90 cm">Escolher</button></article>
+<article><img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=800&q=80" alt="Enfeites natalinos"><h3>1,20 m</h3><p>Média — para sua sala.</p><b>Consulte o preço</b><button class="choose" data-size="1,20 m">Escolher</button></article>
+<article><img src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=800&q=80" alt="Árvore iluminada"><h3>1,50 m</h3><p>Grande — destaque da decoração.</p><b>Consulte o preço</b><button class="choose" data-size="1,50 m">Escolher</button></article>
+<article><img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=800&q=80" alt="Enfeites de Natal"><h3>1,80 m</h3><p>Extra grande — para ambientes amplos.</p><b>Consulte o preço</b><button class="choose" data-size="1,80 m">Escolher</button></article>
+<article><img src="https://images.unsplash.com/photo-1543255006-d6395b6f1171?auto=format&fit=crop&w=800&q=80" alt="Árvore grande"><h3>2,10 m</h3><p>Gigante — decoração marcante.</p><b>Consulte o preço</b><button class="choose" data-size="2,10 m">Escolher</button></article>
+</div>
+</section>
+<section class="panel" id="pedido">
+<h2>Faça seu pedido pelo WhatsApp</h2><p class="muted">Preencha os dados. O WhatsApp abrirá com a mensagem pronta para enviar.</p>
+<p class="selected">Tamanho selecionado: <strong id="selectedLabel">Ainda não selecionado</strong></p>
+<form id="orderForm">
+<div class="fields">
+<div><label for="name">Nome completo *</label><input id="name" required autocomplete="name"></div>
+<div><label for="phone">Seu telefone *</label><input id="phone" required placeholder="(15) 99999-9999"></div>
+<div><label for="size">Tamanho *</label><select id="size" required><option value="">Selecione</option><option>60 cm</option><option>90 cm</option><option>1,20 m</option><option>1,50 m</option><option>1,80 m</option><option>2,10 m</option></select></div>
+<div><label for="qty">Quantidade *</label><input id="qty" type="number" min="1" max="20" value="1" required></div>
+<div><label for="cep">CEP *</label><input id="cep" required placeholder="00000-000"></div>
+<div><label for="city">Cidade *</label><input id="city" required></div>
+<div><label for="state">Estado (UF) *</label><input id="state" maxlength="2" required placeholder="SP"></div>
+<div><label for="district">Bairro *</label><input id="district" required></div>
+<div class="wide"><label for="street">Rua / Avenida e número *</label><input id="street" required></div>
+<div class="wide"><label for="extra">Complemento (opcional)</label><input id="extra"></div>
+<div class="wide"><label for="details">Observações (opcional)</label><textarea id="details" rows="3"></textarea></div>
+</div>
+<div class="warning">PARA FINALIZAR, CLIQUE NO BOTÃO E DEPOIS TOQUE EM ENVIAR NO WHATSAPP.</div>
+<p class="note"><b>Pagamento:</b> Pix somente depois da confirmação de disponibilidade, preço total, frete e prazo. Não pague antes de conferir os dados.</p>
+<button class="submit" type="submit">CONFIRMAR E ENVIAR PEDIDO PELO WHATSAPP</button>
+</form>
+<div id="result" aria-live="polite"></div>
+</section>
+<section class="contact"><div><h2>Precisa de ajuda?</h2><p>Atendimento pelo WhatsApp</p></div><a class="btn light" href="https://wa.me/5515998205675" target="_blank" rel="noopener">(15) 99820-5675</a></section>
+</main>
+<footer>Especial de Natal • Atendimento pelo WhatsApp (15) 99820-5675</footer>
+<script src="script.js"></script>
+</body></html>
